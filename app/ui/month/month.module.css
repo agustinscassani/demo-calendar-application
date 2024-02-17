@@ -1,0 +1,9 @@
+.month {
+  color: #FFFFFF;
+  display: flex;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 61px;
+}

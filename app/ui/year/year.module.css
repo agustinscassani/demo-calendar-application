@@ -1,0 +1,11 @@
+.year {
+  color: #FFFFFF;
+  display: flex;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 109px;
+  margin-bottom: -30px;
+  margin-top: 29px;
+}

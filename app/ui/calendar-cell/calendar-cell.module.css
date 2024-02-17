@@ -1,0 +1,22 @@
+.calendarCell {
+  align-items: center;
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.reminderCell {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.selectedDay {
+  align-items: center;
+  background: linear-gradient(90deg, #FF465D 0%, #BC46BA 100%);
+  border-radius: 100px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}

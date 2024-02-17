@@ -1,0 +1,21 @@
+.remindersContainer {
+  height: 490px;
+  margin-top: 50px;
+  overflow: auto;
+  padding: 5px;
+}
+
+.noRemindersContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.noRemindersText {
+  color: #767A7B;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+}

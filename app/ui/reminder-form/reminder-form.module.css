@@ -1,0 +1,47 @@
+.reminderForm {
+  margin-top: 22px;
+}
+
+.colorLabel {
+  border-radius: 6px;
+  border: 1px solid #31272566;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 48px;
+  width: 55px;
+}
+
+.colorRadio {
+  display: none;
+}
+
+.colorLabel:has(.colorRadio:checked) {
+  border: 5px solid #101277;
+}
+
+.formDivider {
+  background: rgba(49, 39, 37, 0.2);
+  height: 1px;
+  margin-bottom: 39px;
+  width: auto;
+}
+
+.saveButton {
+  background: #394ABC;
+  border-radius: 4px;
+  box-shadow: 0px 4px 28px 2px #D1DCF0;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  height: 49px;
+  line-height: 22px;
+  margin-left: 14px;
+  text-align: center;
+  width: 108px;
+}
+
+.formButtons {
+  text-align: right;
+}

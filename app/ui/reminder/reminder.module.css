@@ -1,0 +1,65 @@
+.reminderCard {
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 3px 3px 10px 0px #D1DCF0;
+  display: flex;
+  height: 134px;
+  margin-bottom: 31px;
+  width: 567px;
+}
+
+.reminderColor {
+  border-radius: 100px;
+  height: 111px;
+  margin: 0px 10px 0px 12px;
+  width: 12px;
+}
+
+.reminderTitle {
+  color: #797979;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.reminderDescription {
+  color: #384042;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  margin-right: 9px;
+  width: 412px;
+}
+
+.reminderDivider {
+  background: #D1DCF0;
+  height: 134px;
+  width: 1px;
+}
+
+.reminderTime {
+  align-items: center;
+  color: #797979;
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  margin-left: 10px;
+}
+
+.reminderButton {
+  align-items: center;
+  background: linear-gradient(90deg, #3BC6FB 0%, #00FFCC 100%);
+  border-radius: 100px;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  margin-bottom: -130px;
+  margin-left: -24px;
+  width: 36px;
+}
