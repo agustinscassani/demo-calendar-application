@@ -9,7 +9,7 @@ export function getNavigationURL(direction: 'left' | 'right', day: string): stri
 
   if (direction === 'left') {
     if (mm === '01') {
-      return `$/{Number(yyyy) - 1}-12-01`;
+      return `/${Number(yyyy) - 1}-12-01`;
     }
 
     const newMonth = Number(mm) - 1;

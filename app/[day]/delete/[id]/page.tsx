@@ -29,7 +29,7 @@ export default async function DeletePage({ params: { day, id } }: { params: { da
           <Link href={`/${day}/edit/${id}`}>
             <CancelButton text="No" />
           </Link>
-          <DeleteButton text="Yes" type="submit" />
+          <DeleteButton pendingText="Deleting" text="Yes" type="submit" />
         </div>
       </form>
     </>

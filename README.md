@@ -2,35 +2,36 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install project dependencies:
+
+```bash
+npm i
+```
+
+Then run the development server (please check important note as well):
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Important note
 
-## Learn More
+In order to use the app, you have to create a token using this [API](https://api.calendar.codelitt.dev/docs#/Tokens/create) and then change your dev srcipt inside your package.json file adding an environment variable named `API_TOKEN` with your value, so your dev script should look something like:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+API_TOKEN={your value goes here} next dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## See it live!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can see this project up and running  [here](https://demo-calendar-application.vercel.app/).
 
-## Deploy on Vercel
+## Shared thoughts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* I would like to unify all the styles in a simple way, that is, everything on tailwind or everything on css modules, just pick one method and remove all dependencies or logic that is not needed based on your selection.
+* I would like to invest more time on unit test for async and server components and also on client components with new latest hook `useFormStatus`.
+* I would like to add a state management library, probably something simple in configuration like [zustand](https://zustand-demo.pmnd.rs/) to manage simple state in the app, here, based on a great video I watched about relying the state of your app in your URL to avoid even the use of useState, I depend a lot on the selected day on the URL path (error handling included), but no useState was used at all!

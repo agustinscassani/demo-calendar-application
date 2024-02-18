@@ -24,16 +24,14 @@ export default function Reminder({ day, reminder }: { day: string, reminder: Rem
         />
         <p>{reminder.date.toString().substring(11, 16)}</p>
       </div>
-      <Link href={`/${day}/edit/${reminder.id}`}>
-        <button className={styles.reminderButton}>
-          <Image
-            alt="Pencil icon"
-            height={18}
-            priority
-            src="/pencil-icon.svg"
-            width={18}
-          />
-        </button>
+      <Link className={styles.reminderButton} href={`/${day}/edit/${reminder.id}`}>
+        <Image
+          alt="Pencil icon"
+          height={18}
+          priority
+          src="/pencil-icon.svg"
+          width={18}
+        />
       </Link>
     </main>
   );

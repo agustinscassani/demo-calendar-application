@@ -5,6 +5,7 @@ import { createReminder, updateReminder } from '@/app/actions/reminders';
 import DeleteButton from '@/app/ui/delete-button/DeleteButton';
 import { getDate, getTime } from '@/app/lib/utils';
 import { Reminder } from '@/app/types/reminder';
+import SaveButton from '@/app/ui/save-button/SaveButton';
 import styles from '@/app/ui/reminder-form/reminder-form.module.css';
 
 const reminderColors: string[] = ['#C8E6C9', '#F5DD29', '#FFCC80', '#EF9A9A', '#CD8DE5', '#5BA4CF', '#29CCE5', '#6DECA9', '#FF8ED4', '#BCAAA4'];
@@ -115,9 +116,7 @@ export default function ReminderForm({ day, reminder }: { day: string, reminder?
         <Link href={`/${day}`}>
           <CancelButton text="Cancel" />
         </Link>
-        <button className={styles.saveButton} type="submit">
-          Save
-        </button>
+        <SaveButton />
       </div>
     </form>
   );
