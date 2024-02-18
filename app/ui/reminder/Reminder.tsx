@@ -24,8 +24,8 @@ export default function Reminder({ day, reminder }: { day: string, reminder: Rem
         />
         <p>{reminder.date.toString().substring(11, 16)}</p>
       </div>
-      <button className={styles.reminderButton}>
-        <Link href={`/${day}/edit/${reminder.id}`}>
+      <Link href={`/${day}/edit/${reminder.id}`}>
+        <button className={styles.reminderButton}>
           <Image
             alt="Pencil icon"
             height={18}
@@ -33,8 +33,8 @@ export default function Reminder({ day, reminder }: { day: string, reminder: Rem
             src="/pencil-icon.svg"
             width={18}
           />
-        </Link>
-      </button>
+        </button>
+      </Link>
     </main>
   );
 }
