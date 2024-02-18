@@ -27,7 +27,7 @@ export async function createReminder(day: string, formData: FormData) {
   redirect(`/${day}`);
 }
 
-export async function getDaysWithReminders(period: string): Promise<Record<string, Date>[]> {
+export async function getDaysWithReminders(period: string): Promise<{ date: string }[]> {
   const response = await fetch(`${API_REMINDERS_URL}/${process.env.API_TOKEN}?date=${period}`, { cache: 'no-store' });
   const data = await response.json();
 
